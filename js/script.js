@@ -18,7 +18,7 @@ const outputHtml = document.querySelector('.numeri');
 
 outputHtml.innerHTML = `hai 30 secondi per memorizzare i numeri <br/> i numeri sono: ${numbers}`;
 
-setTimeout(off, 30000);
+setTimeout(off, 10000);
 
 function off() {
     outputHtml.innerHTML = '';
@@ -27,7 +27,7 @@ function off() {
 
 const numberListUtente = [];
 
-setTimeout(inserire, 30000);
+setTimeout(inserire, 10000);
 
 function inserire() {
     for (let i = 0; i < 5; i++) {
@@ -43,8 +43,11 @@ console.log(numberListUtente);
 
 const numEsatti = [];
 
-if (numberListUtente == numbers) {
-    numEsatti.push(numberListUtente)
+for (let i = 0; i < numbers.length; i++) {
+    if (numberListUtente === numbers[i]) {
+        numEsatti.push(numUtente);
+        // break; // <= opzionale, esce dal ciclo
+    }
 }
 
-console.log(numEsatti)
+console.log(numEsatti);

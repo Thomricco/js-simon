@@ -41,6 +41,10 @@ function inserire() {
 
 console.log(numberListUtente);
 
+const numEsatti = [];
+
 if (numberListUtente == numbers) {
-    
+    numEsatti.push(numberListUtente)
 }
+
+console.log(numEsatti)
